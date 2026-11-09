@@ -1,0 +1,501 @@
+
+/* Home Page */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 65vh;
+  padding: 40px 20px;
+}
+
+.home-content {
+  flex: 1;
+}
+
+.welcome-text {
+  color: #648bb8;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home-content h1 {
+  color: #263b55;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.home-content h1 span {
+  color: #648bb8;
+}
+
+.home-content h2 {
+  color: #648bb8;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-description {
+  color: #52677e;
+  line-height: 1.8;
+  max-width: 550px;
+  margin: 25px 0;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background-color: #648bb8;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #456d9a;
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  border: 2px solid #648bb8;
+  color: #648bb8;
+}
+
+.secondary-button:hover {
+  background-color: #dceafa;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 150px 150px 30px 30px;
+  border: 8px solid white;
+  box-shadow: 0 8px 25px rgba(38, 59, 85, 0.15);
+}
+
+@media (max-width: 700px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-description {
+    margin: 20px auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 240px;
+    height: 280px;
+  }
+}
+
+
+/* About Page */
+
+.about-page {
+  padding: 30px 20px;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-heading h1 {
+  color: #263b55;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.about-heading p:last-child {
+  color: #52677e;
+  line-height: 1.7;
+}
+
+.about-section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(38, 59, 85, 0.07);
+}
+
+.about-section h2 {
+  color: #648bb8;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  color: #52677e;
+  line-height: 1.8;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-card {
+  background-color: #eaf3fc;
+  color: #456d9a;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background-color: #648bb8;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .about-heading h1 {
+    font-size: 34px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+}
+
+
+/* Projects Page */
+
+.projects-page {
+  padding: 30px 20px;
+}
+
+.projects-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.projects-heading h1 {
+  color: #263b55;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.projects-heading p:last-child {
+  color: #52677e;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+.project-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(38, 59, 85, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(38, 59, 85, 0.13);
+}
+
+.project-card h2 {
+  color: #456d9a;
+  font-size: 23px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #52677e;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.project-technologies span {
+  background-color: #eaf3fc;
+  color: #456d9a;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-card a {
+  display: inline-block;
+  background-color: #648bb8;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #456d9a;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-heading h1 {
+    font-size: 34px;
+  }
+
+  .project-card {
+    padding: 23px;
+  }
+}
+
+
+/* Individual Project Details Page */
+
+.project-details {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(38, 59, 85, 0.08);
+}
+
+.project-details h1 {
+  color: #263b55;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.project-details-description {
+  color: #52677e;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.project-details-section {
+  margin-top: 35px;
+}
+
+.project-details-section h2 {
+  color: #648bb8;
+  margin-bottom: 12px;
+}
+
+.project-details-section p {
+  color: #52677e;
+  line-height: 1.8;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 22px;
+  background-color: #648bb8;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background-color: #456d9a;
+}
+
+@media (max-width: 600px) {
+  .project-details {
+    padding: 23px;
+    margin: 20px auto;
+  }
+
+  .project-details h1 {
+    font-size: 30px;
+  }
+}
+
+
+/* Contact Page */
+
+.contact-page {
+  padding: 30px 20px;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contact-heading h1 {
+  color: #263b55;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.contact-heading p:last-child {
+  color: #52677e;
+  line-height: 1.7;
+}
+
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(38, 59, 85, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  color: #456d9a;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 13px 15px;
+  border: 1px solid #d5e2f0;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #263b55;
+  background-color: #f7faff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #648bb8;
+  box-shadow: 0 0 0 3px rgba(100, 139, 184, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background-color: #648bb8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #456d9a;
+}
+
+.success-message {
+  text-align: center;
+  color: #456d9a;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .contact-heading h1 {
+    font-size: 34px;
+  }
+
+  .contact-form {
+    padding: 23px;
+  }
+}
+
+
+/* Not Found Page */
+
+.not-found-page {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found-page h1 {
+  color: #648bb8;
+  font-size: 100px;
+  margin: 15px 0;
+}
+
+.not-found-page h2 {
+  color: #263b55;
+  font-size: 28px;
+}
+
+.not-found-page p:not(.welcome-text) {
+  color: #52677e;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Code developed with assistance from ChatGPT (November 2026).
+   Prompt: Help me with my current style to make a responsive React portfolio projects page.
+   Student Review: Reviewed and customized the styling. */
